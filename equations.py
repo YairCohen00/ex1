@@ -1,4 +1,4 @@
-def regPow(x, i):
+def regPow(x:float, i:float):
     if i == 0:
         return 1
     else:
@@ -7,7 +7,7 @@ def regPow(x, i):
             ans *= x
     return ans
 
-def factorial(i):
+def factorial(i:float):
     if i < 1:
         return 1
     ans = i
@@ -15,13 +15,13 @@ def factorial(i):
         ans *= x
     return ans
 
-def absu (x):
+def absu (x:float):
     if x > 0:
         return x
     else:
         return x*-1
 
-def odd(x):
+def odd(x:float):
     if x % 2 != 0:
         return True
     else:
