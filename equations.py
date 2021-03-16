@@ -46,16 +46,6 @@ def exponent(x:float):
     return ans
 
 
-def Ln(x:float):
-    if x <= 0:
-        return 0.0
-    ans = x - 1.0
-    temp = 0
-    while absu(temp - ans) > 0.001:
-        temp = ans
-        ans = ans + 2 * ((x - exponent(ans)) / (x + exponent(ans)))
-    return ans
-
 def ln(x:float):
     if x <= 0:
         return 0.0
@@ -74,7 +64,7 @@ def XtimesY(x:float,y:float):
     elif y == 1:
         return float(x)
     else:
-        ans = exponent(y * Ln(x))
+        ans = exponent(y * ln(x))
         return ans
 
 def sqrt(x:float,y:float):
