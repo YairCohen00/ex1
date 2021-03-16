@@ -56,6 +56,16 @@ def Ln(x:float):
         ans = ans + 2 * ((x - exponent(ans)) / (x + exponent(ans)))
     return ans
 
+def ln(x:float):
+    if x <= 0:
+        return 0.0
+    ans = x - 1.0
+    temp = 0
+    while absu(temp - ans) > 0.001:
+        temp = ans
+        ans = ans + 2 * ((x - exponent(ans)) / (x + exponent(ans)))
+    return ans
+
 def XtimesY(x:float,y:float):
     if x<0:
         return 0.0
