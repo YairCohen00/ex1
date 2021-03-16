@@ -80,5 +80,5 @@ def calculate(x:float):
     ans = exponent(x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x)
     return float('%0.6f' % ans)
 
-x = float(input())
+x = input()
 calculate(x)
