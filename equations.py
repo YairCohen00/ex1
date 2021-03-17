@@ -64,7 +64,7 @@ def XtimesY(x:float,y:float):
     elif y == 1:
         return float(x)
     else:
-        ans = exponent(y * ln(x))
+        ans = exponent(y * Ln(x))
         return ans
 
 def sqrt(x:float,y:float):
