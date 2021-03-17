@@ -46,7 +46,7 @@ def exponent(x:float):
     return ans
 
 
-def ln(x:float):
+def Ln(x:float):
     if x <= 0:
         return 0.0
     ans = x - 1.0
